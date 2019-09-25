@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--Tag untuk menentukan tipe dokumen -->
+
+<html>
+      <!--Tag untuk membuat sebuah dokumen HTML -->
+
+    <head>
+        <title>Contoh Kasus Cascading CSS</title>
+         <!--Tag untuk membuat judul dari sebuah halaman -->
+
+        <link rel="stylesheet" type="text/css" href="prioritas.css">
+        <!--Menentukkan hubungan (relationship) antara dokumen yang bersangkutan dengan dokumen yang di-link-->
+
+        <style type="text/css">
+        /*selector digunakan untuk mencari bagian web yang ingin dimanipulasi atau yang ingin di-style*/
+
+            h2 {
+                color:red;
+            }
+             /*mencari seluruh tag h2 dan mengubah dengan warna merah*/
+            /**/
+
+        </style>
+    </head>
+<body>
+    <h2>
+        Akan berwarna apa saya?..1
+    </h2>
+    <h2 style="color:green">
+            <!--mencari seluruh tag h2 dan mengubah dengan warna hijau-->
+
+        Akan berwarna apa saya?..2
+    </h2>
+</body>
+</html>

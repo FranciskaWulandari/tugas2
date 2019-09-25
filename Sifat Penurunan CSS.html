@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--Tag untuk menentukan tipe dokumen -->
+
+<html>
+
+    <head>
+        <title>Contoh Inheritance dalam CSS</title>
+         <!--Tag untuk membuat judul dari sebuah halaman -->
+
+        <style type="text/css">
+        /*selector digunakan untuk mencari bagian web yang ingin dimanipulasi atau yang ingin di-style*/
+         
+        div.satu {
+                border: 1px solid black;
+                color: blue;
+                }
+                /*tag <div> menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
+                Pada bagian satu border 1px dengan warna hitam sedangkan huruf warna biru*/
+
+        div.dua {
+                border: 1px solid black;
+                }
+                 /*tag <div> menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
+                Pada bagian satu border 1px dengan warna hitam sedangkan huruf warna biru*/
+
+        p.dua {
+                border: inherit;
+                }
+                /*untuk memanipulasi pada bagian paragraf*/
+</style>
+</head>
+    <body>
+        <div class="satu">
+              <!--thanya membuat property border dan color pada tag div.satu.
+                Karena prinsip inheritance dalam CSS, seluruh kalimat pada tag <div> yang memiliki class=”satu” 
+                akan berwarna biru (sesuai dengan sifat inheritance-nya -->
+              
+            <p class="satu">
+            <!--tag untuk manipulasi pada bagian class paragraf,namun efek border tidak diturunkan kepada tag <p>.-->
+
+            Kalimat ini tanpa <em class="satu">nilai property inherit</em> CSS
+    </p>
+</div>
+<br />
+    <div class="dua">
+        <p class="dua">
+        Kalimat ini menggunakan <em class="dua">nilai property inherit</em> CSS
+
+        <!--Pada class=”dua”, saya menambahkan nilai inherit untuk property border pada tag <p>.
+        Hasil dari nilai inherit ini akan membuat tag <p> juga memiliki border yang sama dengan 
+        yang didefenisikan pada tag induknya-->
+        </p>
+    </div>
+</body>
+</html>

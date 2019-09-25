@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--Tag untuk menentukan tipe dokumen -->
+
+<html>
+<!--Tag untuk membuat sebuah dokumen HTML -->
+
+<head>
+<title>Belajar CSS</title>
+<!--Tag untuk membuat judul dari sebuah halaman -->
+
+    <style type="text/css">
+    /*selector digunakan untuk mencari bagian web yang ingin dimanipulasi atau yang ingin di-style*/
+
+    h2 , h3{
+            color: blue;
+            }
+            /*Membuat seluruh tag header <h2> berwarna biru*/
+
+    p strong {
+            color:red;
+            }
+            /*membuat seluruh p berwarna merah*/
+
+    h2.judul , .paragraf {
+            font-style: italic;
+            }
+            /*merubah font miring pada bagian h2,judul dan paragraf*/
+
+    #belajar_html, p#belajar_css, h3.subheader {
+            font-size:14pt;
+            }
+            /*Ubah ukuran text menjadi 14pt untuk tag yang memiliki id “belajar_html”, 
+            tag p dengan id “belajar_css” dan seluruh tag h3 yang memiliki class “subheader”*/
+
+</style>
+</head>
+    <body>
+    <!--Tag untuk membuat tubuh dari sebuah halaman -->
+
+        <h2 class="judul">Belajar CSS</h2>
+        <!--Tag untuk membuat tubuh dari sebuah halaman -->
+
+        <p> Ini <strong>adalah</strong> sebuah <em>paragraf</em> </p>
+         <!--Tag untuk membuat paragraf 
+            strong untuk memberikan efek tebal
+            em untuk memberikan efek miring -->
+
+        <p id="belajar_html" class="paragraf" >Saya sedang belajar HTML dari
+            <!--Tag untuk membuat paragraf dan membuat link-->
+
+        <a href="http://www.jti.polije.com" target="_blank">Jti.polije</a>
+         <!--membuat link ke alamat lain di internet, atau lebih dikenal dengan: alamat absolut-->
+
+        akan terbuka pada tab baru</p>
+        <p id="belajar_css" class="paragraf">
+        <!--Tag untuk membuat paragraf dan membuat link-->
+        Saya sedang belajar CSS, mohon jangan diganggu</p>
+
+        <br />
+
+        <h3 class="judul subheader">Daftar Belanjaan</h3>
+        <!--  Tag untuk membuat heading-->
+
+        <ol>
+        <!--digunakan untuk membuat daftar dengan penanda simbol-->
+
+            56
+            <li><em>Minyak Goreng</em></li>
+            <!-- untuk menambah daftar/isi dari tag <ol> dan em untuk efek miring-->
+
+            <li>Sabun Mandi</li>
+             <!-- untuk menambah daftar/isi dari tag <ol>-->
+
+            <li>Deterjen</li>
+             <!-- untuk menambah daftar/isi dari tag <ol>-->
+
+            <li>Shampoo</li>
+             <!-- untuk menambah daftar/isi dari tag <ol>-->
+
+            <li>Obat Nyamuk</li>
+             <!-- untuk menambah daftar/isi dari tag <ol>-->
+
+        </ol>
+    </body>
+</html>
