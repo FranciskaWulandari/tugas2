@@ -14,13 +14,14 @@
                 border: 1px solid black;
                 color: blue;
                 }
-                /*tag <div> menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
+                /*(berfungsi untuk memberi garis tepi pada selector satu)tag <div> menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
                 Pada bagian satu border 1px dengan warna hitam sedangkan huruf warna biru*/
 
         div.dua {
                 border: 1px solid black;
                 }
-                 /*tag <div> menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
+                 /*tag <div>(code baris dibawah ini akan mengubah style dari selector class dua yang berada di dalem div)
+                menggunakan atribut id sebagai pembeda antara tag <div> yang satu dengan yang lainnya.
                 Pada bagian satu border 1px dengan warna hitam sedangkan huruf warna biru*/
 
         p.dua {
@@ -29,7 +30,11 @@
                 /*untuk memanipulasi pada bagian paragraf*/
 </style>
 </head>
+<!-- penutup tag head -->
+
     <body>
+    <!--tag body yang berfungsi untuk menampilkan isi dokumen-->
+
         <div class="satu">
               <!--thanya membuat property border dan color pada tag div.satu.
                 Karena prinsip inheritance dalam CSS, seluruh kalimat pada tag <div> yang memiliki class=”satu” 
@@ -52,4 +57,7 @@
         </p>
     </div>
 </body>
+ <!-- tutup tag body -->
+
 </html>
+<!-- tutup tag html -->

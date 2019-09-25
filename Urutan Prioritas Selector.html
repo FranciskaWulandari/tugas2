@@ -2,34 +2,100 @@
 <!--Tag untuk menentukan tipe dokumen -->
 
 <html>
-      <!--Tag untuk membuat sebuah dokumen HTML -->
+
+    <!-- pembuka tag head yang untuk kepala dari dokumen-->
 
     <head>
-        <title>Contoh Kasus Cascading CSS</title>
-         <!--Tag untuk membuat judul dari sebuah halaman -->
 
-        <link rel="stylesheet" type="text/css" href="prioritas.css">
-        <!--Menentukkan hubungan (relationship) antara dokumen yang bersangkutan dengan dokumen yang di-link-->
+        <!-- tag title berfungsi sebagai judul-->
 
-        <style type="text/css">
+        <title>Urutan Prioritas Selector</title>
+
+        <style>
         /*selector digunakan untuk mencari bagian web yang ingin dimanipulasi atau yang ingin di-style*/
 
             h2 {
-                color:red;
+
+                color: red;
+
             }
-             /*mencari seluruh tag h2 dan mengubah dengan warna merah*/
-            /**/
+
+            p {
+
+                color:red !important;
+
+            }
+
+             /* penggunaan code !important maka baris kode ini akan di prioritaskan*/
+
+            div p {
+
+                color:green;
+
+            }
+
+            #aaa{
+
+                color:orange;
+
+            }
+
+            body div p {
+
+                color:yellow;
+
+            }
+
+            div p.kalimat {
+
+                color:silver;
+
+            }
 
         </style>
+
     </head>
-<body>
-    <h2>
-        Akan berwarna apa saya?..1
-    </h2>
-    <h2 style="color:green">
-            <!--mencari seluruh tag h2 dan mengubah dengan warna hijau-->
+
+    <!-- penutup tag head -->
+
+
+
+    <!-- pembuka tag body yang untuk menampilkan isi dokumen -->
+
+    <body>
+
+        <!-- tag h2 berfungsi untuk membuat heading 2-->
+
+        <h2>
+
+            Akan berwarna apa saya?..1
+
+        </h2>
+
+        <!-- penggunaan style menggunakan metode inline style lebih diutamakan oleh browser dibandingkan menggunakan selector yang lain -->
+
+        <h2 style="color:green">
 
         Akan berwarna apa saya?..2
-    </h2>
-</body>
+
+        </h2>
+
+        <div>
+
+            <!-- pada bagian ini yang akan diprioritaskan -->
+
+            <p id="aaa" class="kalimat">
+
+            Sedang Belajar CSS...
+
+            </p>
+
+        </div>
+
+    </body>
+
+    <!-- tutup tag body -->
+
 </html>
+
+<!-- tutup tag html -->
